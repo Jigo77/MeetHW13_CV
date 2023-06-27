@@ -11,10 +11,15 @@ public class JobSearchTest extends TestBase {
 
 
     HomePage homePage = new HomePage();
+    @Test
+    public void home1() throws InterruptedException {
+        homePage.iframeHandle();
+    }
 
 
     @Test
-    public void home(){
+    public void home() throws InterruptedException {
+
         homePage.verifyJobSearchResultUsingDifferentDataSet();
     }
 

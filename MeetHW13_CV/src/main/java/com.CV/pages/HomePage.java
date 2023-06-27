@@ -37,6 +37,11 @@ public class HomePage extends Utility {
         select.selectByVisibleText(distance);
 
     }
+    public void iframeHandle() throws InterruptedException {
+        driver.switchTo().frame("gdpr-consent-notice");
+        driver.findElement(By.xpath("//button[@id='save']")).click();
+        driver.switchTo().defaultContent();
+    }
 
     public void clickOnMoreSearchOptionLink(){
         clickOnElement(moreop);

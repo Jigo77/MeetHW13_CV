@@ -16,7 +16,7 @@ public class ManageDriver {
     public String baseUrl = PropertyReader.getInstance().getProperty("baseUrl");
     public String baseUrl1 = PropertyReader.getInstance().getProperty("baseUrl1");
     public String secondsInString = PropertyReader.getInstance().getProperty("implicitlyWait");
-    public long seconds = Long.parseLong(secondsInString);
+    //public long seconds = Long.parseLong(secondsInString);
     public ManageDriver(){
         PageFactory.initElements(driver,this);
         PropertyConfigurator.configure(System.getProperty("user.dir")+"/src/test/java/resources/propertiesfile/log4j2.properties");

@@ -12,7 +12,7 @@ public class TestBase extends Utility {
     private com.CV.propertyreader.PropertyReader PropertyReader;
     String browser = PropertyReader.getInstance().getProperty("browser");
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     //@Parameters("browser")
     public void setUp(){
         selectBrowser(browser);
